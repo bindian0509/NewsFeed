@@ -9,9 +9,7 @@ import com.myntra.bharat.newsfeed.utils.FileResourcesUtils;
 import lombok.SneakyThrows;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /*
  * Developer : Bharat Verma
@@ -113,6 +111,10 @@ public class BootSocialNetwork {
                 if(action.equals(SocialNetwork.UPVOTE)) {
                     int contentId = Integer.parseInt(params[1]);
                     socialNetwork.contentService.upVote(contentId);
+                }
+                if(action.equals(SocialNetwork.DOWNVOTE)) {
+                    int contentId = Integer.parseInt(params[1]);
+                    socialNetwork.contentService.downVote(contentId);
                 }
             }
 

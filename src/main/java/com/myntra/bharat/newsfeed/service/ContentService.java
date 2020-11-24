@@ -40,8 +40,9 @@ public class ContentService {
     }
 
     public void upVote (int contentId) {
-
+        // todo problem with content id it can be anything a POST or a REPLY | need and identifier
     }
+
     public void downVote (int contentId) {
 
     }
