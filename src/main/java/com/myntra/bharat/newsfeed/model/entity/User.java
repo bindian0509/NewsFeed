@@ -1,9 +1,9 @@
 package com.myntra.bharat.newsfeed.model.entity;
 
-import com.google.common.base.MoreObjects;
 import lombok.Data;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /*
  * Developer : Bharat Verma
@@ -28,10 +28,10 @@ public class User {
 
     @Override
     public String toString() {
-        return MoreObjects.toStringHelper(this)
-                .add("name", name)
-                .add("followers", followers.size())
-                .add("following", following.size())
-                .toString();
+        return "User{" +
+                "name='" + name + '\'' +
+                ", followers=" + followers +
+                ", following=" + following +
+                '}';
     }
 }

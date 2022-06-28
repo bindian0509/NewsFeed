@@ -1,13 +1,12 @@
 package com.myntra.bharat.newsfeed.model.constant;
 
-import java.text.SimpleDateFormat;
+import lombok.SneakyThrows;
+import org.ocpsoft.prettytime.PrettyTime;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
-
-import lombok.SneakyThrows;
-import org.ocpsoft.prettytime.PrettyTime;
 
 /*
  * Developer : Bharat Verma
